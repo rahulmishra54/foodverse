@@ -1,0 +1,38 @@
+{
+  "name": "food-reels-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rahulmishra54/food-reels-backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/rahulmishra54/food-reels-backend/issues"
+  },
+  "homepage": "https://github.com/rahulmishra54/food-reels-backend#readme",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cloudinary": "^2.10.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "imagekit": "^6.0.0",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.9.1",
+    "morgan": "^1.10.1",
+    "multer": "^2.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
