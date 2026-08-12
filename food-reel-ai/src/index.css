@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #050505;
+  --color-card: rgba(17, 17, 17, 0.95);
+  --color-card-hover: rgba(33, 33, 33, 0.95);
+  --color-border: rgba(255, 255, 255, 0.08);
+  --color-primary: #FF7A00;
+  --color-primary-light: #FFB07A;
+  --font-sans: "Inter", "Segoe UI", system-ui, sans-serif;
+}
+
+@layer utilities {
+  .glass-card {
+    background: rgba(15, 15, 15, 0.72);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: #f5f5f5;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-border) transparent;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 8px;
+}
+
+.glass {
+  background: rgba(23, 23, 23, 0.6);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--color-border);
+}
+
+.gradient-primary {
+  background: linear-gradient(135deg, #FF6B00 0%, #FF8A3D 100%);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #FF6B00 0%, #FFB07A 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.skeleton {
+  background: linear-gradient(90deg, #171717 25%, #212121 37%, #171717 63%);
+  background-size: 400% 100%;
+  animation: skeleton-loading 1.4s ease infinite;
+}
+
+@keyframes skeleton-loading {
+  0% { background-position: 100% 50%; }
+  100% { background-position: 0 50%; }
+}
+
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
