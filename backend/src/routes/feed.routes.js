@@ -4,7 +4,7 @@ import { optionalAuthUserMiddleware } from "../middleware/auth.middleware.js";
 
 const router = express.Router();
 
-router.get("/", optionalAuthUserMiddleware, getFoodItems);
+router.post("/", optionalAuthUserMiddleware, getFoodItems);
 router.get("/info", optionalAuthUserMiddleware, getReelByInfo);
 router.get("/id/:id", optionalAuthUserMiddleware, getReelById);
 
