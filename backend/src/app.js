@@ -13,7 +13,7 @@ import userRoutes from "./routes/user.routes.js";
 const app = express();
 app.use(cors({
     origin : ["http://localhost:5173",
-        "https://foodverse-tan.vercel.app",
+        "foodverse-blush.vercel.app",
     "https://foodverse-git-main-rahulmishra.vercel.app"],
     credentials : true
 }));
