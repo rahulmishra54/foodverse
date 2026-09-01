@@ -15,7 +15,8 @@ app.use(cors({
     origin: [
         "http://localhost:5173",
         "https://foodverse-blush.vercel.app",
-        "https://foodverse-git-main-rahulmishra.vercel.app"
+        "https://foodverse-git-main-rahulmishra.vercel.app",
+        "https://foodverse-906e.onrender.com"
     ],
     credentials: true
 }));
